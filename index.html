@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DishClan - Recipes</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">DishClan<span>.</span></a>
+        <div class="recipeToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#banner">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#recipes">Recipes</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+
+        </ul>
+
+    </header>
+    <section class="banner" id="banner">
+
+        <div class="content">
+            <h2>Always Choose Good</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe iste minus quidem tempora reprehenderit praesentium, perspiciatis atque corporis veniam similique possimus. Excepturi </p>
+            <a href="#recipes" class="btn">Our Recipes</a>
+        </div>
+
+
+        
+    </section>
+
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titleText"><span>A</span>bout Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, deserunt. Est dolore enim voluptates? Ex maiores quae, voluptate perspiciatis eligendi quasi officiis animi expedita mollitia deleniti consequatur debitis asperiores quam.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto tempore, optio voluptatem earum rem facere ullam at minima exercitationem temporibus nam. A at voluptas odit ipsam, consequatur quibusdam iusto deserunt?</p>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="./Images/img1.jpg" alt="">
+                </div>
+            </div>
+        
+
+
+        </div>
+    </section>
+
+    <section class="recipes" id="recipes">
+        <div class="title">
+            <h2 class="titleText">Our <span>R</span>ecipes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+        </div>
+        <div class="content">
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./Images/menu1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Special Salads</h3>
+                    <p>Recipe : <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, accusamus!</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./Images/menu2.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Special Soup</h3>
+                    <p>Recipe : <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+
+
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./Images/menu3.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Special Pasta</h3>
+                    <p>Recipe : <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./Images/menu4.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Special Collie</h3>
+                    <p>Recipe : <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./Images/menu5.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Special Manchurian</h3>
+                    <p>Recipe : <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./Images/menu6.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Special Paneer</h3>
+                    <p>Recipe : <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="title">
+            <a href="#" class="btn">View All</a>
+        </div>
+
+
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titleText"><span>C</span>ontact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+
+        <div class="contactForm">
+            <h3>Send Message</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="Name">
+            </div>
+
+            <div class="inputBox">
+                <input type="email" placeholder="Email">
+            </div>
+
+            <div class="inputBox">
+                <textarea placeholder="Message"></textarea>
+            </div>
+
+            <div class="inputBox">
+                <input type="submit" value="Send">
+            </div>
+
+
+
+        </div>
+    </section>
+
+    <div class="copyrightText">
+        <p> Copyright 2022 <a href="#">Sabir Khan</a> All Right Reserved</p>
+    </div>
+
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+
+        function toggleMenu(){
+            const recipeToggle = document.querySelector('.recipeToggle');
+            const navigation = document.querySelector('.navigation');
+
+            recipeToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
